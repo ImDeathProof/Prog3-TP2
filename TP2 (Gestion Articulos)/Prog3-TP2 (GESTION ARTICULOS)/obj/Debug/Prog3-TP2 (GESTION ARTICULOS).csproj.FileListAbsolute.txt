@@ -1,0 +1,11 @@
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe.config
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).csproj.AssemblyReference.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).csproj.SuggestedBindingRedirects.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.Form1.resources
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.Properties.Resources.resources
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).csproj.GenerateResource.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).csproj.CoreCompileInputs.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\TP2 (GESTION ARTICULOS)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
