@@ -26,5 +26,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         {
 
         }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmModificiar modificar = new FrmModificiar();
+            modificar.Show();
+        }
     }
 }

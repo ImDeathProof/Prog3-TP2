@@ -36,11 +36,11 @@
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayúdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayúdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -98,12 +98,25 @@
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // opcionesToolStripMenuItem
+            // 
+            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.opcionesToolStripMenuItem.Text = "Opciones";
+            // 
+            // ayúdaToolStripMenuItem
+            // 
+            this.ayúdaToolStripMenuItem.Name = "ayúdaToolStripMenuItem";
+            this.ayúdaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayúdaToolStripMenuItem.Text = "Ayúda";
             // 
             // salirToolStripMenuItem
             // 
@@ -129,18 +142,6 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // opcionesToolStripMenuItem
-            // 
-            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
-            // 
-            // ayúdaToolStripMenuItem
-            // 
-            this.ayúdaToolStripMenuItem.Name = "ayúdaToolStripMenuItem";
-            this.ayúdaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayúdaToolStripMenuItem.Text = "Ayúda";
             // 
             // pictureBox1
             // 
@@ -185,6 +186,7 @@
             this.MaximumSize = new System.Drawing.Size(1164, 660);
             this.MinimumSize = new System.Drawing.Size(1164, 660);
             this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestor Articulos";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
