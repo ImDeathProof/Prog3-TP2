@@ -7,3 +7,12 @@ C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrime
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.dll
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.dll
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb

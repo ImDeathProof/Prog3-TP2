@@ -4,3 +4,9 @@ C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrime
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.dll
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.pdb
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
+C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2-main\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb
