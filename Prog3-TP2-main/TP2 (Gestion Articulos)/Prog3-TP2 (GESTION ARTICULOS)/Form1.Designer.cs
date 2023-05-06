@@ -43,6 +43,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblDesc = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
@@ -82,8 +83,9 @@
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
             this.tsAgregar.Text = "Agregar";
+            this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
             // 
             // opcionesToolStripMenuItem
             // 
@@ -166,11 +168,22 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(776, 448);
+            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(776, 469);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(14, 18);
             this.lblDescripcion.TabIndex = 7;
-            this.lblDescripcion.Text = "Descripción";
+            this.lblDescripcion.Text = "*";
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(776, 435);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(108, 20);
+            this.lblDesc.TabIndex = 8;
+            this.lblDesc.Text = "Descripción:";
             // 
             // FrmPrincipal
             // 
@@ -179,6 +192,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 621);
+            this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.btnEliminar);
@@ -220,6 +234,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvArticulos;
         private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label lblDesc;
     }
 }
 

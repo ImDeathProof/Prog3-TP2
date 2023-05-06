@@ -1,6 +1,6 @@
 ﻿namespace Prog3_TP2__GESTION_ARTICULOS_
 {
-    partial class FrmModificiar
+    partial class FrmModificar
     {
         /// <summary>
         /// Required designer variable.
@@ -170,7 +170,7 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmModificiar
+            // FrmModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "FrmModificiar";
+            this.Name = "FrmModificar";
             this.Text = "Modificar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -81,10 +81,11 @@ S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmArticulos.resources
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmPrincipal.resources
-S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmModificiar.resources
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.Properties.Resources.resources
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.GenerateResource.cache
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmModificar.resources
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmAltaArticulo.resources

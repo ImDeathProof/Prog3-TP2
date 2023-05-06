@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Prog3_TP2__GESTION_ARTICULOS_
 {
-    public partial class FrmModificiar : Form
+    public partial class FrmModificar : Form
     {
-        public FrmModificiar()
+        public FrmModificar()
         {
             InitializeComponent();
         }

@@ -47,7 +47,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmModificiar modificar = new FrmModificiar();
+            FrmModificar modificar = new FrmModificar();
             modificar.Show();
         }
 
@@ -104,6 +104,12 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void tsAgregar_Click(object sender, EventArgs e)
+        {
+            FrmAltaArticulo altaArticulo = new FrmAltaArticulo();
+            altaArticulo.ShowDialog();
         }
     }
 }

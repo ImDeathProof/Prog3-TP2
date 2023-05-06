@@ -26,6 +26,7 @@ namespace Negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.imagen = new Imagen();
                     aux.imagen.ImagenUrl = (string)datos.Lector["ImagenUrl"];
 
@@ -53,6 +54,26 @@ namespace Negocio
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+        public void agregar(Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("INSERT into ARTICULOS(Codigo, Nombre, Descripcion, Precio) values('"+ nuevo.Codigo +"', '"+ nuevo.Nombre +"', '"+ nuevo.Descripcion +"', " + nuevo.Precio +" )");
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
     }
