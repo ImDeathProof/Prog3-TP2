@@ -16,7 +16,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdMarca, A.IdCategoria, I.idArticulo, I.ImagenUrl from ARTICULOS A, IMAGENES I where I.idArticulo = A.IdCategoria");
+                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdMarca, A.IdCategoria, I.idArticulo, I.ImagenUrl from ARTICULOS A, IMAGENES I where I.idArticulo = A.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
