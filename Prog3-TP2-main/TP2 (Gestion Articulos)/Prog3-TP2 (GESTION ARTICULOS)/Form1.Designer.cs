@@ -31,11 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarArticuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verListadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsBuscar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsAgregar = new System.Windows.Forms.ToolStripMenuItem();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayúdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,47 +64,25 @@
             // stockToolStripMenuItem
             // 
             this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarArticuloToolStripMenuItem,
-            this.verListadoToolStripMenuItem,
-            this.agregarToolStripMenuItem,
-            this.modificarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
+            this.tsBuscar,
+            this.tsAgregar});
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.stockToolStripMenuItem.Text = "Articulo";
             this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
             // 
-            // buscarArticuloToolStripMenuItem
+            // tsBuscar
             // 
-            this.buscarArticuloToolStripMenuItem.Name = "buscarArticuloToolStripMenuItem";
-            this.buscarArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.buscarArticuloToolStripMenuItem.Text = "Buscar Articulo";
+            this.tsBuscar.Name = "tsBuscar";
+            this.tsBuscar.Size = new System.Drawing.Size(180, 22);
+            this.tsBuscar.Text = "Buscar";
+            this.tsBuscar.Click += new System.EventHandler(this.buscarArticuloToolStripMenuItem_Click);
             // 
-            // verListadoToolStripMenuItem
+            // tsAgregar
             // 
-            this.verListadoToolStripMenuItem.Name = "verListadoToolStripMenuItem";
-            this.verListadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verListadoToolStripMenuItem.Text = "Ver Listado";
-            this.verListadoToolStripMenuItem.Click += new System.EventHandler(this.verListadoToolStripMenuItem_Click);
-            // 
-            // agregarToolStripMenuItem
-            // 
-            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agregarToolStripMenuItem.Text = "Agregar";
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.modificarToolStripMenuItem.Text = "Modificar";
-            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.tsAgregar.Name = "tsAgregar";
+            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsAgregar.Text = "Agregar";
             // 
             // opcionesToolStripMenuItem
             // 
@@ -149,10 +124,12 @@
             // 
             // pbxArticulo
             // 
-            this.pbxArticulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxArticulo.BackgroundImage")));
+            this.pbxArticulo.ErrorImage = null;
+            this.pbxArticulo.InitialImage = null;
             this.pbxArticulo.Location = new System.Drawing.Point(776, 68);
             this.pbxArticulo.Name = "pbxArticulo";
             this.pbxArticulo.Size = new System.Drawing.Size(360, 360);
+            this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulo.TabIndex = 3;
             this.pbxArticulo.TabStop = false;
             this.pbxArticulo.Click += new System.EventHandler(this.pictureBoxArticulo_Click);
@@ -180,8 +157,9 @@
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.Location = new System.Drawing.Point(12, 68);
             this.dgvArticulos.Name = "dgvArticulos";
-            this.dgvArticulos.Size = new System.Drawing.Size(745, 532);
+            this.dgvArticulos.Size = new System.Drawing.Size(744, 532);
             this.dgvArticulos.TabIndex = 6;
+            this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // FrmPrincipal
             // 
@@ -218,11 +196,8 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarArticuloToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verListadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsBuscar;
+        private System.Windows.Forms.ToolStripMenuItem tsAgregar;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
