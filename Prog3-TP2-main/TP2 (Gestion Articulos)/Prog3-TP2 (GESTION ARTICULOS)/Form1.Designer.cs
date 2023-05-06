@@ -40,7 +40,7 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -74,14 +74,14 @@
             // tsBuscar
             // 
             this.tsBuscar.Name = "tsBuscar";
-            this.tsBuscar.Size = new System.Drawing.Size(180, 22);
+            this.tsBuscar.Size = new System.Drawing.Size(116, 22);
             this.tsBuscar.Text = "Buscar";
             this.tsBuscar.Click += new System.EventHandler(this.buscarArticuloToolStripMenuItem_Click);
             // 
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
             this.tsAgregar.Text = "Agregar";
             // 
             // opcionesToolStripMenuItem
@@ -143,14 +143,15 @@
             this.button1.Text = "Modificar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.Location = new System.Drawing.Point(1048, 561);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(1048, 561);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.button2_Click);
             // 
             // dgvArticulos
             // 
@@ -169,7 +170,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 621);
             this.Controls.Add(this.dgvArticulos);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.toolStrip1);
@@ -205,7 +206,7 @@
         private System.Windows.Forms.ToolStripMenuItem ayúdaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pbxArticulo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvArticulos;
     }
 }
