@@ -17,3 +17,4 @@ namespace Dominio
         public Imagen imagen { get; set; }
     }
 }
+ 

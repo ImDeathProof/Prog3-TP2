@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominio;
+using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 {
     public partial class FrmPrincipal : Form
     {
+        private List<Articulo> listaArticulo;
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -19,6 +22,10 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            articuloNegocio negocio = new articuloNegocio();
+            listaArticulo = negocio.listar();
+            dgvArticulos.DataSource = listaArticulo;
+            pbxArticulo.Load(listaArticulo[0].imagen.ImagenUrl);
 
         }
 
@@ -37,6 +44,16 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         {
           FrmArticulos articulos = new FrmArticulos();
             articulos.Show();   
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBoxArticulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
