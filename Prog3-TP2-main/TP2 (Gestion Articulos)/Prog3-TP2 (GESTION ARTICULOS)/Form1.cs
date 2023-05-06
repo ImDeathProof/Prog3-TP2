@@ -27,8 +27,17 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             articuloNegocio negocio = new articuloNegocio();
             listaArticulo = negocio.listar();
             dgvArticulos.DataSource = listaArticulo;
+            dgvArticulos.Columns["Imagen"].Visible = false;
+            dgvArticulos.Columns["Descripcion"].Visible = false;
+            dgvArticulos.Columns["Id"].Visible = false;
             loadImagen(listaArticulo[0].imagen.ImagenUrl);
 
+        }
+        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            loadImagen(seleccionado.imagen.ImagenUrl);
+            lblDescripcion.Text = seleccionado.Descripcion;
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,11 +67,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         }
 
-        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
-        {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            loadImagen(seleccionado.imagen.ImagenUrl);
-        }
         private void loadImagen(string imagen)
         {
             try

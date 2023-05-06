@@ -42,6 +42,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
@@ -162,6 +163,15 @@
             this.dgvArticulos.TabIndex = 6;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(776, 448);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.TabIndex = 7;
+            this.lblDescripcion.Text = "Descripción";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +179,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 621);
+            this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.button1);
@@ -208,6 +219,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvArticulos;
+        private System.Windows.Forms.Label lblDescripcion;
     }
 }
 
