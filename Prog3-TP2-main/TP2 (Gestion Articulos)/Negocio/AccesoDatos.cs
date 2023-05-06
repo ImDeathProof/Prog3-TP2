@@ -21,11 +21,11 @@ namespace Negocio
         public AccesoDatos()
         {
             //ELIAS:
-           //conexion = new SqlConnection("server=.\\SQLEXPRESSLAB3; database=CATALOGO_P3_DB; integrated security=false; user = sa; password = 123456");
+            conexion = new SqlConnection("server=.\\SQLEXPRESSLAB3; database=CATALOGO_P3_DB; integrated security=false; user = sa; password = 123456");
             //BRIAN: 
             //conexion = new SqlConnection("server=.\\SQLLABO3; database=CATALOGO_P3_DB; integrated security=false; user = sa; password = 123456");
             //JOAQUIN:
-            conexion = new SqlConnection("server=.\\SQLEXPRESS01; database=CATALOGO_P3_DB; integrated security=true ");
+            //conexion = new SqlConnection("server=.\\SQLEXPRESS01; database=CATALOGO_P3_DB; integrated security=true ");
             comando = new SqlCommand();
         }
 
@@ -58,7 +58,7 @@ namespace Negocio
             }
         }
 
-        public void setearParametro(string nombre, object valor)
+        public void setearParametros(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
         }

@@ -28,3 +28,9 @@ S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.dll
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.pdb
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb

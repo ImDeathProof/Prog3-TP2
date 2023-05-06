@@ -61,12 +61,12 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
             try
             {
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Nombre = txtNombre.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.marca = (Marca)cboMarca.SelectedItem;
-                articulo.categoria = (Categoria)cboCategoria.SelectedItem;
-                articulo.Precio = decimal.Parse(txtPrecio.Text);
+                articulo.Codigo = txbCodigo.Text;
+                articulo.Nombre = txbNombre.Text;
+                articulo.Descripcion = txbDescripcion.Text;
+                articulo.marca = (Marca)cbMarca.SelectedItem;
+                articulo.categoria = (Categoria)cbCategoria.SelectedItem;
+                articulo.Precio = decimal.Parse(txbPrecio.Text);
 
                 negocio.Agregar(articulo);
                 MessageBox.Show("Articulo agregado exitosamente. ");
@@ -84,20 +84,21 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
             MarcaNegocio marcaNegocio = new MarcaNegocio();
 
-            cboCategoria.DataSource = categoriaNegocio.listar();
-            cboMarca.DataSource = marcaNegocio.listar();
+            cbCategoria.DataSource = categoriaNegocio.listar();
+            cbMarca.DataSource = marcaNegocio.listar();
 
         }
 
 
         private void FrmAltaArticulo_Load(object sender, EventArgs e)
         {
-            articuloNegocio artNegocio = new articuloNegocio();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
 
             try
             {
-                cbCategoria.DataSource = artNegocio.listar();
-                cbMarca.DataSource = artNegocio.listar();
+                cbMarca.DataSource = marcaNegocio.listar();
+                cbCategoria.DataSource = categoriaNegocio.listar();
             }
             catch (Exception ex)
             {

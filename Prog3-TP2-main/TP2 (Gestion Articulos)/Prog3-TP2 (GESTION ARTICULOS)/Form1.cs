@@ -30,13 +30,13 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             dgvArticulos.Columns["Imagen"].Visible = false;
             dgvArticulos.Columns["Descripcion"].Visible = false;
             dgvArticulos.Columns["Id"].Visible = false;
-            loadImagen(listaArticulo[0].imagen.ImagenUrl);
+            //loadImagen(listaArticulo[0].imagen.ImagenUrl);
 
         }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            loadImagen(seleccionado.imagen.ImagenUrl);
+            //loadImagen(seleccionado.imagen.ImagenUrl);
             lblDescripcion.Text = seleccionado.Descripcion;
         }
 
@@ -73,11 +73,9 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             {
                 pbxArticulo.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pbxArticulo.Load("https://static.thenounproject.com/png/2879926-200.png");
-
-
             }
         }
 

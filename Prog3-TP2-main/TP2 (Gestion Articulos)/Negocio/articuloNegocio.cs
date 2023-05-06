@@ -17,20 +17,30 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdMarca, A.IdCategoria, I.idArticulo, I.ImagenUrl from ARTICULOS A, IMAGENES I where I.idArticulo = A.Id");
-                //datos.setearConsulta("SELECT DISTINCT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, M.Descripcion Marca, C.Descripcion Categoria, I.ImagenUrl Imagen FROM ARTICULOS A LEFT JOIN IMAGENES I ON I.idArticulo = A.Id LEFT JOIN MARCAS M ON M.Id = A.IdMarca LEFT JOIN CATEGORIAS C ON C.Id = A.IdCategoria");
+                //datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdMarca, A.IdCategoria, I.idArticulo, I.ImagenUrl from ARTICULOS A, IMAGENES I where I.idArticulo = A.Id");
+                datos.setearConsulta("SELECT DISTINCT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, M.Descripcion Marca, C.Descripcion Categoria from ARTICULOS A, MARCAS M, CATEGORIAS C where M.Id = A.IdMarca and C.Id = A.IdCategoria");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Articulo aux = new Articulo();
-                    //aux.Id = (int)datos.Lector["Id"];
+                    aux.Id = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
-                    aux.imagen = new Imagen();
-                    aux.imagen.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    //aux.imagen = new Imagen();
+                    //aux.imagen.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.categoria = new Categoria();
+                    if (datos.Lector["Categoria"] is DBNull)
+                    {
+                        aux.categoria.Descripcion = " ";
+                    }
+                    else{
+                        aux.categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    }
+                    aux.marca = new Marca();
+                    aux.marca.Descripcion = (string)datos.Lector["Marca"];
 
                     lista.Add(aux);
                 }
@@ -49,7 +59,7 @@ namespace Negocio
             {
                 AccesoDatos datos = new AccesoDatos();
                 datos.setearConsulta("delete from articulos where id = @id");
-                datos.setearParametro("@id", id);
+                datos.setearParametros("@id", id);
                 datos.ejecutarAccion();
 
             }
@@ -58,7 +68,7 @@ namespace Negocio
                 throw ex;
             }
         }
-        public void agregar(Articulo nuevo)
+        /*public void agregar(Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
 
@@ -78,32 +88,33 @@ namespace Negocio
                 datos.cerrarConexion();
             }
 
-            //Joaquin
-            /*public void Agregar(Articulo nuevo)
+            
+        }*/
+        //Joaquin
+        public void Agregar(Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
             {
-                AccesoDatos datos = new AccesoDatos();
+                datos.setearConsulta("insert into ARTICULOS (Codigo,Nombre,Descripcion,IdMarca,IdCategoria,Precio) values(@Codigo,@Nombre,@Descripcion,@idMarca,@idCategoria,@Precio)");
+                datos.setearParametros("@Codigo", nuevo.Codigo);
+                datos.setearParametros("@Nombre", nuevo.Nombre);
+                datos.setearParametros("@Descripcion", nuevo.Descripcion);
+                datos.setearParametros("@idMarca", nuevo.marca.Id);
+                datos.setearParametros("@idCategoria", nuevo.categoria.Id);
+                datos.setearParametros("@Precio", nuevo.Precio);
 
-                try
-                {
-                    datos.setearConsulta("insert into ARTICULOS (Codigo,Nombre,Descripcion,IdMarca,IdCategoria,Precio) values(@Codigo,@Nombre,@Descripcion,@idMarca,@idCategoria,@Precio)");
-                    datos.setearParametros("@Codigo", nuevo.Codigo);
-                    datos.setearParametros("@Nombre", nuevo.Nombre);
-                    datos.setearParametros("@Descripcion", nuevo.Descripcion);
-                    datos.setearParametros("@idMarca", nuevo.marca.Id);
-                    datos.setearParametros("@idCategoria", nuevo.categoria.Id);
-                    datos.setearParametros("@Precio", nuevo.Precio);
+                datos.ejecutarAccion();
 
-                    datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
 
-                }
-                catch (Exception ex)
-                {
+                throw ex;
+            }
+            finally { datos.cerrarConexion(); }
 
-                    throw ex;
-                }
-                finally { datos.cerrarConexion(); }
-
-            }*/
         }
     }
 }
