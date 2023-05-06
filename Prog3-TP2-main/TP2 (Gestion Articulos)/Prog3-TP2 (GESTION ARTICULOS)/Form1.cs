@@ -27,9 +27,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             articuloNegocio negocio = new articuloNegocio();
             listaArticulo = negocio.listar();
             dgvArticulos.DataSource = listaArticulo;
-            dgvArticulos.Columns["Imagen"].Visible = false;
-            dgvArticulos.Columns["Descripcion"].Visible = false;
-            dgvArticulos.Columns["Id"].Visible = false;
             loadImagen(listaArticulo[0].imagen.ImagenUrl);
 
         }
@@ -65,8 +62,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         {
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             loadImagen(seleccionado.imagen.ImagenUrl);
-            lblDescripcion.Text = seleccionado.Descripcion;
-
         }
         private void loadImagen(string imagen)
         {
@@ -77,6 +72,8 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             catch (Exception ex)
             {
                 pbxArticulo.Load("https://static.thenounproject.com/png/2879926-200.png");
+
+
             }
         }
 
@@ -85,8 +82,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         }
 
-<<<<<<< HEAD
-=======
         private void button2_Click(object sender, EventArgs e)
         {
             articuloNegocio articulo = new articuloNegocio();
@@ -106,6 +101,5 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 MessageBox.Show(ex.ToString());
             }
         }
->>>>>>> 5d83f09b8c53c905a417902267c7123433296bb8
     }
 }
