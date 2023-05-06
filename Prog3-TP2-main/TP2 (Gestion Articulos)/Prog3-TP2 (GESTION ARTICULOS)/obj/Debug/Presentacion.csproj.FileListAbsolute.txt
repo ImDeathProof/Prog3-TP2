@@ -89,3 +89,7 @@ S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmModificar.resources
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmAltaArticulo.resources
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb

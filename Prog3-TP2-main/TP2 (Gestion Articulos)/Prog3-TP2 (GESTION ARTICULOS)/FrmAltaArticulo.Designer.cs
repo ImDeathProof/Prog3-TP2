@@ -39,11 +39,11 @@
             this.txbCodigo = new System.Windows.Forms.TextBox();
             this.txbDescripcion = new System.Windows.Forms.TextBox();
             this.txbPrecio = new System.Windows.Forms.TextBox();
-            this.txbMarca = new System.Windows.Forms.TextBox();
-            this.txbCategoria = new System.Windows.Forms.TextBox();
             this.txbImagen = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -148,22 +148,6 @@
             this.txbPrecio.Size = new System.Drawing.Size(289, 20);
             this.txbPrecio.TabIndex = 10;
             // 
-            // txbMarca
-            // 
-            this.txbMarca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbMarca.Location = new System.Drawing.Point(173, 183);
-            this.txbMarca.Name = "txbMarca";
-            this.txbMarca.Size = new System.Drawing.Size(289, 20);
-            this.txbMarca.TabIndex = 11;
-            // 
-            // txbCategoria
-            // 
-            this.txbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbCategoria.Location = new System.Drawing.Point(173, 216);
-            this.txbCategoria.Name = "txbCategoria";
-            this.txbCategoria.Size = new System.Drawing.Size(289, 20);
-            this.txbCategoria.TabIndex = 12;
-            // 
             // txbImagen
             // 
             this.txbImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -194,16 +178,34 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // cbMarca
+            // 
+            this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(173, 178);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(289, 21);
+            this.cbMarca.TabIndex = 16;
+            // 
+            // cbCategoria
+            // 
+            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Location = new System.Drawing.Point(173, 212);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(289, 21);
+            this.cbCategoria.TabIndex = 17;
+            // 
             // FrmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
+            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txbImagen);
-            this.Controls.Add(this.txbCategoria);
-            this.Controls.Add(this.txbMarca);
             this.Controls.Add(this.txbPrecio);
             this.Controls.Add(this.txbDescripcion);
             this.Controls.Add(this.txbCodigo);
@@ -220,6 +222,7 @@
             this.Name = "FrmAltaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltaArticulo";
+            this.Load += new System.EventHandler(this.FrmAltaArticulo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,10 +241,10 @@
         private System.Windows.Forms.TextBox txbCodigo;
         private System.Windows.Forms.TextBox txbDescripcion;
         private System.Windows.Forms.TextBox txbPrecio;
-        private System.Windows.Forms.TextBox txbMarca;
-        private System.Windows.Forms.TextBox txbCategoria;
         private System.Windows.Forms.TextBox txbImagen;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbMarca;
+        private System.Windows.Forms.ComboBox cbCategoria;
     }
 }

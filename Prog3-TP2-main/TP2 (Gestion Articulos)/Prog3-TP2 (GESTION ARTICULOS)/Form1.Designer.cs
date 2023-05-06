@@ -83,7 +83,7 @@
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
             this.tsAgregar.Text = "Agregar";
             this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
             // 
@@ -158,6 +158,8 @@
             // 
             // dgvArticulos
             // 
+            this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvArticulos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.Location = new System.Drawing.Point(12, 68);
             this.dgvArticulos.Name = "dgvArticulos";
@@ -200,6 +202,7 @@
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1164, 660);
             this.MinimumSize = new System.Drawing.Size(1164, 660);

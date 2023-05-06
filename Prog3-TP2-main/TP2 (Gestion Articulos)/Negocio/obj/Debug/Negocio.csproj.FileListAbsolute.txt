@@ -43,3 +43,12 @@ S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.dll
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.pdb
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.dll
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.pdb
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
+C:\Users\joaquin gigena\OneDrive\Documentos\TP_N2\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb
