@@ -111,7 +111,7 @@
             // agregarEliminarToolStripMenuItem1
             // 
             this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
-            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
             this.agregarEliminarToolStripMenuItem1.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem1_Click);
             // 
@@ -253,6 +253,7 @@
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // FrmPrincipal
             // 

@@ -57,3 +57,4 @@ C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GES
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmMarcas.resources

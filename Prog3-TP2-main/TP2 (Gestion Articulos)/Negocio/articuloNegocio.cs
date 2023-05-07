@@ -19,7 +19,7 @@ namespace Negocio
             {
                 //datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdMarca, A.IdCategoria, I.idArticulo, I.ImagenUrl from ARTICULOS A, IMAGENES I where I.idArticulo = A.Id");
                 //datos.setearConsulta("SELECT DISTINCT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, M.Descripcion Marca, C.Descripcion Categoria from ARTICULOS A, MARCAS M, CATEGORIAS C where M.Id = A.IdMarca and C.Id = A.IdCategoria");
-                datos.setearConsulta("SELECT A.Id, A.Precio, A.Codigo,A.Nombre, A.Descripcion, M.Descripcion Marca ,C.Descripcion Categoria from ARTICULOS A inner join MARCAS M on M.Id=A.IdMarca inner join CATEGORIAS C on C.Id=A.IdCategoria");
+                datos.setearConsulta("SELECT A.Id, A.Precio, A.Codigo,A.Nombre, A.Descripcion, A.IdMarca, M.Descripcion Marca , A.IdCategoria, C.Descripcion Categoria from ARTICULOS A inner join MARCAS M on M.Id=A.IdMarca inner join CATEGORIAS C on C.Id=A.IdCategoria");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -41,8 +41,10 @@ namespace Negocio
                     {
                         aux.categoria.Descripcion = (string)datos.Lector["Categoria"];
                     }
+                    aux.categoria.Id = (int)datos.Lector["IdCategoria"];
                     aux.marca = new Marca();
                     aux.marca.Descripcion = (string)datos.Lector["Marca"];
+                    aux.marca.Id = (int)datos.Lector["IdMarca"];
 
                     lista.Add(aux);
                 }
@@ -72,15 +74,22 @@ namespace Negocio
                 throw ex;
             }
         }
-        /*public void agregar(Articulo nuevo)
+        public void Modificar(Articulo modificado)
         {
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                datos.setearConsulta("INSERT into ARTICULOS(Codigo, Nombre, Descripcion, Precio) values('"+ nuevo.Codigo +"', '"+ nuevo.Nombre +"', '"+ nuevo.Descripcion +"', " + nuevo.Precio +" )");
-                datos.ejecutarAccion();
+                datos.setearConsulta("update ARTICULOS set Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @Precio where Id = @Id");
+                datos.setearParametros("@Codigo", modificado.Codigo);
+                datos.setearParametros("@Nombre", modificado.Nombre);
+                datos.setearParametros("@Descripcion", modificado.Descripcion);
+                datos.setearParametros("@idMarca", modificado.marca.Id);
+                datos.setearParametros("@idCategoria", modificado.categoria.Id);
+                datos.setearParametros("@Precio", modificado.Precio);
+                datos.setearParametros("@Id", modificado.Id);
 
+                datos.ejecutarAccion();
             }
             catch (Exception ex)
             {
@@ -91,10 +100,7 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
-
-            
-        }*/
-        //Joaquin
+        }
         public void Agregar(Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();

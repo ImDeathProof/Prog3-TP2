@@ -14,53 +14,36 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 {
     public partial class FrmAltaArticulo : Form
     {
+        private Articulo articulo = null;
         public FrmAltaArticulo()
         {
             InitializeComponent();
+        }
+
+        public FrmAltaArticulo(Articulo articulo)
+        {
+            ///constructor utilizado para modificar
+            InitializeComponent();
+            Text = "Modificar Articulo";
+            this.articulo = articulo;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-        /*private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            Articulo nuevo = new Articulo();
-            articuloNegocio negocio = new articuloNegocio();
-            try
-            {
-                nuevo.Nombre = txbNombre.Text;
-                nuevo.Codigo = txbCodigo.Text;
-                nuevo.Descripcion = txbDescripcion.Text;
-                nuevo.Precio = decimal.Parse(txbPrecio.Text);
-                //nuevo.categoria = int.Parse(txbCategoria.Text);
-                //nuevo.marca = txbMarca.Text;
-                //nuevo.imagen = new Imagen();
-                //nuevo.imagen.ImagenUrl = txbImagen.Text;
-
-                //nuevo.Precio
-
-                negocio.agregar(nuevo);
-                MessageBox.Show("El articulo ha sido agregado");
-                Close();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-                //MessageBox.Show(ex.ToString());
-            }
-        }
-        */
-
         //JOaquin
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Articulo articulo = new Articulo();
+            //Articulo articulo = new Articulo();
             articuloNegocio negocio = new articuloNegocio();
 
             try
             {
+                if(articulo == null)
+                {
+                    articulo = new Articulo();
+                }
                 articulo.Codigo = txbCodigo.Text;
                 articulo.Nombre = txbNombre.Text;
                 articulo.Descripcion = txbDescripcion.Text;
@@ -68,8 +51,17 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 articulo.categoria = (Categoria)cbCategoria.SelectedItem;
                 articulo.Precio = decimal.Parse(txbPrecio.Text);
 
-                negocio.Agregar(articulo);
-                MessageBox.Show("Articulo agregado exitosamente. ");
+                if (articulo.Id != 0)
+                {
+                    negocio.Modificar(articulo);
+                    MessageBox.Show("Articulo modificado exitosamente. ");
+                }
+                else
+                {
+                    negocio.Agregar(articulo);
+                    MessageBox.Show("Articulo agregado exitosamente. ");
+                }
+
                 Close();
             }
             catch (Exception ex)
@@ -98,7 +90,23 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             try
             {
                 cbMarca.DataSource = marcaNegocio.listar();
+                cbMarca.ValueMember = "Id";
+                cbMarca.DisplayMember = "Descripcion";
                 cbCategoria.DataSource = categoriaNegocio.listar();
+                cbCategoria.ValueMember = "Id";
+                cbCategoria.DisplayMember = "Descripcion";
+
+                if (articulo != null)
+                {
+                    txbNombre.Text = articulo.Nombre;
+                    txbCodigo.Text = articulo.Codigo;
+                    txbDescripcion.Text = articulo.Descripcion;
+                    txbPrecio.Text = articulo.Precio.ToString();
+
+                    cbMarca.SelectedValue = articulo.marca.Id;
+                    cbCategoria.SelectedValue = articulo.categoria.Id;
+
+                }
             }
             catch (Exception ex)
             {

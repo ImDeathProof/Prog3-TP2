@@ -56,14 +56,12 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {   
-            ///ACA ESTA EL ERROR QUE FRENA CUANDO SE QUIERE BUSCAR. ESTO ES LO QUE MUESTRA LA DESCRIPCION DE LOS DIFERENTES ARTICULOS
             if(dgvArticulos.CurrentRow != null)
             {
                 Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
+                lblDescripcion.Text = seleccionado.Descripcion;
             }
             //loadImagen(seleccionado.imagen.ImagenUrl);
-            //lblDescripcion.Text = seleccionado.Descripcion;
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,11 +94,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             {
                 pbxArticulo.Load("https://static.thenounproject.com/png/2879926-200.png");
             }
-        }
-
-        private void buscarArticuloToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -234,6 +227,18 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         {
             frmMarcas frmMarcas = new frmMarcas();  
             frmMarcas.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if(dgvArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                
+                FrmAltaArticulo modificarArticulo = new FrmAltaArticulo(seleccionado);
+                modificarArticulo.ShowDialog();
+                cargarLista();
+            }
         }
     }
 }
