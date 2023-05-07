@@ -57,7 +57,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {   
             ///ACA ESTA EL ERROR QUE FRENA CUANDO SE QUIERE BUSCAR. ESTO ES LO QUE MUESTRA LA DESCRIPCION DE LOS DIFERENTES ARTICULOS
-            //Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if(dgvArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            }
             //loadImagen(seleccionado.imagen.ImagenUrl);
             //lblDescripcion.Text = seleccionado.Descripcion;
         }
@@ -108,9 +112,13 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.Yes)
                 {
-                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                    articulo.eliminar(seleccionado.Id);
-                    cargarLista();
+                    if(dgvArticulos.CurrentRow != null)
+                    {
+                        seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                        articulo.eliminar(seleccionado.Id);
+                        cargarLista();
+
+                    }
                 }
             }
             catch (Exception ex)

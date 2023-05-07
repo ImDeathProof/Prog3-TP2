@@ -37,3 +37,23 @@ C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrime
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
 C:\Users\BRIAN\OneDrive\Documentos\PROGRAMACION\UTN\SEGUNDO AÑO\Primer Cuatrimestre\Prog. 3\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmMarcas.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe.config
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Dominio.dll
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Negocio.dll
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Dominio.pdb
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Negocio.pdb
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmAltaArticulo.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmPrincipal.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmCategorias.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmMarcas.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmModificar.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.Properties.Resources.resources
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
