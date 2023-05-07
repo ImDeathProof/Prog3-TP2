@@ -29,6 +29,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 categoria.Descripcion = txbNombre.Text;
 
                 categoriaNegocio.Agregar(categoria);
+                MessageBox.Show("Categoria agregada exitosamente.");
                 Close();
             }
             catch (Exception ex)
@@ -66,6 +67,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 {
                     seleccionada = (Categoria)cbCategorias.SelectedItem;
                     categoriaNegocio.eliminar(seleccionada.Id);
+                    MessageBox.Show("Eliminado correctamente.");
                     cargarCategorias();
                 }
             }

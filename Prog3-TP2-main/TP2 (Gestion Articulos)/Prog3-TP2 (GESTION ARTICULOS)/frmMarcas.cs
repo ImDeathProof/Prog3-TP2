@@ -50,6 +50,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 {
                     seleccionada = (Marca)cbMarcas.SelectedItem;
                     marcaNegocio.eliminar(seleccionada.Id);
+                    MessageBox.Show("Eliminado correctamente.");
                     cargarMarca();
                 }
             }
