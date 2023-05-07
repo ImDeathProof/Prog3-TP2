@@ -45,10 +45,10 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 //loadImagen(listaArticulo[0].imagen.ImagenUrl);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
 
 
@@ -71,13 +71,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             FrmModificar modificar = new FrmModificar();
             modificar.Show();
         }
-
-        private void verListadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-          FrmArticulos articulos = new FrmArticulos();
-            articulos.Show();   
-        }
-
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
@@ -215,6 +208,17 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 cboCriterio.Items.Add("Termina con: ");
                 cboCriterio.Items.Add("Contiene: ");
             }
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void agregarEliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCategorias frmCategorias = new frmCategorias();
+            frmCategorias.ShowDialog();
         }
     }
 }
