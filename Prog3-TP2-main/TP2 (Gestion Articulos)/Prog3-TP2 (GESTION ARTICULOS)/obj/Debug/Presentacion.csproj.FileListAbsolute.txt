@@ -112,3 +112,7 @@ S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Dominio.pdb
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Negocio.pdb
 S:\UTN\Segundo año\Programación 3\Trabajos Practicos\TP N2\Prog3-TP2\Prog3-TP2\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\joaquin gigena\OneDrive\Escritorio\UltimaVersion\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\joaquin gigena\OneDrive\Escritorio\UltimaVersion\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\joaquin gigena\OneDrive\Escritorio\UltimaVersion\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\Users\joaquin gigena\OneDrive\Escritorio\UltimaVersion\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
