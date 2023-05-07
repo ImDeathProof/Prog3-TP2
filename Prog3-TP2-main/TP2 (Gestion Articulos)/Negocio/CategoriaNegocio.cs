@@ -60,6 +60,7 @@ namespace Negocio
             }
             finally { datos.cerrarConexion(); }
         }
+
         public void eliminar(int id)
         {
             try
@@ -74,5 +75,6 @@ namespace Negocio
                 throw ex;
             }
         }
+
     }
 }

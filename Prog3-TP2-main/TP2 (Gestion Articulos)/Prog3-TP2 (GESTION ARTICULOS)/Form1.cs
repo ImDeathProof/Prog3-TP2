@@ -221,5 +221,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             frmCategorias frmCategorias = new frmCategorias();
             frmCategorias.ShowDialog();
         }
+
+        private void agregarEliminarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMarcas frmMarcas = new frmMarcas();  
+            frmMarcas.ShowDialog();
+        }
     }
 }

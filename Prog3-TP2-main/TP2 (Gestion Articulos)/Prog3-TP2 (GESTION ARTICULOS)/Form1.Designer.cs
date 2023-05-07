@@ -81,7 +81,7 @@
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
             this.tsAgregar.Text = "Agregar";
             this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
             // 
@@ -111,8 +111,9 @@
             // agregarEliminarToolStripMenuItem1
             // 
             this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
-            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
+            this.agregarEliminarToolStripMenuItem1.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem1_Click);
             // 
             // salirToolStripMenuItem
             // 
