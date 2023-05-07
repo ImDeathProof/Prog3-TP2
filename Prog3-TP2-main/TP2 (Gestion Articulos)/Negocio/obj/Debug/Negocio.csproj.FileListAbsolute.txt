@@ -25,3 +25,12 @@ C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\De
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.dll
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.pdb
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.dll
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.pdb
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb

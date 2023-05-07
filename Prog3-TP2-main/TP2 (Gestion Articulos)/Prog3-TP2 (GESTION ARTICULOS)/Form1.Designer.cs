@@ -47,13 +47,13 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.pbxArticulo = new System.Windows.Forms.PictureBox();
+            this.pbxImagen = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -76,7 +76,6 @@
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.stockToolStripMenuItem.Text = "Articulo";
-            this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
             // 
             // tsAgregar
             // 
@@ -127,8 +126,10 @@
             this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArticulos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvArticulos.Location = new System.Drawing.Point(16, 68);
             this.dgvArticulos.Name = "dgvArticulos";
+            this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArticulos.Size = new System.Drawing.Size(745, 360);
             this.dgvArticulos.TabIndex = 6;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
@@ -223,17 +224,16 @@
             this.lblDesc.TabIndex = 8;
             this.lblDesc.Text = "Descripción:";
             // 
-            // pbxArticulo
+            // pbxImagen
             // 
-            this.pbxArticulo.ErrorImage = null;
-            this.pbxArticulo.InitialImage = null;
-            this.pbxArticulo.Location = new System.Drawing.Point(787, 68);
-            this.pbxArticulo.Name = "pbxArticulo";
-            this.pbxArticulo.Size = new System.Drawing.Size(300, 300);
-            this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxArticulo.TabIndex = 3;
-            this.pbxArticulo.TabStop = false;
-            this.pbxArticulo.Click += new System.EventHandler(this.pictureBoxArticulo_Click);
+            this.pbxImagen.ErrorImage = null;
+            this.pbxImagen.InitialImage = null;
+            this.pbxImagen.Location = new System.Drawing.Point(787, 68);
+            this.pbxImagen.Name = "pbxImagen";
+            this.pbxImagen.Size = new System.Drawing.Size(300, 300);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxImagen.TabIndex = 3;
+            this.pbxImagen.TabStop = false;
             // 
             // btnEliminar
             // 
@@ -266,7 +266,7 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtFiltro);
-            this.Controls.Add(this.pbxArticulo);
+            this.Controls.Add(this.pbxImagen);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.cboCriterio);
             this.Controls.Add(this.lblDescripcion);
@@ -287,7 +287,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,7 +313,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblDesc;
-        private System.Windows.Forms.PictureBox pbxArticulo;
+        private System.Windows.Forms.PictureBox pbxImagen;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

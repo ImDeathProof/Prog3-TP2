@@ -32,18 +32,19 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             cboCampo.Items.Add("Descripcion");
 
         }
-
         void cargarLista()
         {
             articuloNegocio negocio = new articuloNegocio();
+            //ImagenNegocio image = new ImagenNegocio();
             try
             {
                 listaArticulo = negocio.listar();
+                //listaImages = image.listar();
                 dgvArticulos.DataSource = listaArticulo;
-                dgvArticulos.Columns["Imagen"].Visible = false;
+                //dgvArticulos.Columns["Imagen"].Visible = false;
                 dgvArticulos.Columns["Id"].Visible = false;
-                dgvArticulos.Columns["Descripcion"].Visible=false;
-                //loadImagen(listaArticulo[0].imagen.ImagenUrl);
+                dgvArticulos.Columns["Descripcion"].Visible = false;
+                //loadImagen(listaImages[0].ImagenUrl);
 
             }
             catch (Exception ex)
@@ -54,45 +55,96 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         }
 
-        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
-        {   
-            if(dgvArticulos.CurrentRow != null)
+        void cargarImagenes(int id)
+        {
+            ImagenNegocio image = new ImagenNegocio();
+            List<string> seleccionadas = new List<string>();
+            List<Imagen> listaImages = new List<Imagen>();
+            try
             {
-                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                lblDescripcion.Text = seleccionado.Descripcion;
+                listaImages = image.listar();
+                int cant = listaImages.Count;
+
+                for (int i = 0; i < cant; i++)
+                {
+                    if (listaImages[i].IdArticulo == id)
+                    {
+                        seleccionadas.Add(listaImages[i].ImagenUrl);
+                    }
+                }
+
+                /* foreach (Imagen item in listaImages)
+                 {
+                     if (item.IdArticulo == seleccionado.Id)
+                     {
+                         seleccionadas.Add(item);
+                     }
+
+                 }
+                */
+                //MessageBox.Show("Cant " + seleccionadas.Count());
+                loadImagen(seleccionadas);
             }
-            //loadImagen(seleccionado.imagen.ImagenUrl);
+            catch (Exception)
+            {
+
+                pbxImagen.Load("https://kinsta.com/wp-content/uploads/2022/06/error-establishing-a-database-connection-in-chrome.png");
+            }
+
         }
 
-        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        private void loadImagen(List<string> lista)
         {
 
+            try
+            {
+                //MessageBox.Show("cant " + lista.Count());
+                pbxImagen.Load(lista[0]);
+
+            }
+            catch (Exception)
+            {
+                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
+            }
         }
+     
+
+        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+            ///ACA ESTA EL ERROR QUE FRENA CUANDO SE QUIERE BUSCAR. ESTO ES LO QUE MUESTRA LA DESCRIPCION DE LOS DIFERENTES ARTICULOS
+            if (dgvArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                cargarImagenes(seleccionado.Id);
+
+            }
+            //loadImagen(seleccionado.imagen.ImagenUrl);
+            //lblDescripcion.Text = seleccionado.Descripcion;
+        }
+       
+
+       
+
+        
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmModificar modificar = new FrmModificar();
             modificar.Show();
         }
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+       
 
-        }
-
-        private void pictureBoxArticulo_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void loadImagen(string imagen)
         {
             try
             {
-                pbxArticulo.Load(imagen);
+                pbxImagen.Load(imagen);
             }
             catch (Exception)
             {
-                pbxArticulo.Load("https://static.thenounproject.com/png/2879926-200.png");
+                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
             }
         }
 

@@ -16,3 +16,9 @@ C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\De
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
 C:\UltimaVersiom\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.dll
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\bin\Debug\Dominio.pdb
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.dll
+C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Dominio\obj\Debug\Dominio.pdb
