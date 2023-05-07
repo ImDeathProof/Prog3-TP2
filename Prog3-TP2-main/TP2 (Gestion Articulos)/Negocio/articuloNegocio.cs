@@ -37,7 +37,8 @@ namespace Negocio
                     {
                         aux.categoria.Descripcion = " ";
                     }
-                    else{
+                    else
+                    {
                         aux.categoria.Descripcion = (string)datos.Lector["Categoria"];
                     }
                     aux.marca = new Marca();

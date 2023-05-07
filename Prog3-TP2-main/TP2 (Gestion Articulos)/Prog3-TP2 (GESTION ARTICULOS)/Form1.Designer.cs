@@ -32,6 +32,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsAgregar = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarEliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarEliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,16 +44,13 @@
             this.cboCampo = new System.Windows.Forms.ComboBox();
             this.cboCriterio = new System.Windows.Forms.ComboBox();
             this.txtFiltro = new System.Windows.Forms.TextBox();
-            this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarEliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarEliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
@@ -83,6 +84,35 @@
             this.tsAgregar.Size = new System.Drawing.Size(180, 22);
             this.tsAgregar.Text = "Agregar";
             this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
+            // 
+            // categoriasToolStripMenuItem
+            // 
+            this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarEliminarToolStripMenuItem});
+            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.categoriasToolStripMenuItem.Text = "Categorias";
+            // 
+            // agregarEliminarToolStripMenuItem
+            // 
+            this.agregarEliminarToolStripMenuItem.Name = "agregarEliminarToolStripMenuItem";
+            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.agregarEliminarToolStripMenuItem.Text = "Agregar - Eliminar";
+            this.agregarEliminarToolStripMenuItem.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem_Click);
+            // 
+            // marcasToolStripMenuItem
+            // 
+            this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarEliminarToolStripMenuItem1});
+            this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.marcasToolStripMenuItem.Text = "Marcas";
+            // 
+            // agregarEliminarToolStripMenuItem1
+            // 
+            this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
+            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
             // 
             // salirToolStripMenuItem
             // 
@@ -160,35 +190,6 @@
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(100, 24);
             this.txtFiltro.TabIndex = 11;
-            // 
-            // categoriasToolStripMenuItem
-            // 
-            this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarEliminarToolStripMenuItem});
-            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.categoriasToolStripMenuItem.Text = "Categorias";
-            // 
-            // marcasToolStripMenuItem
-            // 
-            this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarEliminarToolStripMenuItem1});
-            this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.marcasToolStripMenuItem.Text = "Marcas";
-            // 
-            // agregarEliminarToolStripMenuItem
-            // 
-            this.agregarEliminarToolStripMenuItem.Name = "agregarEliminarToolStripMenuItem";
-            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agregarEliminarToolStripMenuItem.Text = "Agregar - Eliminar";
-            this.agregarEliminarToolStripMenuItem.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem_Click);
-            // 
-            // agregarEliminarToolStripMenuItem1
-            // 
-            this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
-            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
             // 
             // btnBuscar
             // 
@@ -313,6 +314,7 @@
         private System.Windows.Forms.PictureBox pbxArticulo;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

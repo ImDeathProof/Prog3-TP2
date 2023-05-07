@@ -42,6 +42,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 dgvArticulos.DataSource = listaArticulo;
                 dgvArticulos.Columns["Imagen"].Visible = false;
                 dgvArticulos.Columns["Id"].Visible = false;
+                dgvArticulos.Columns["Descripcion"].Visible=false;
                 //loadImagen(listaArticulo[0].imagen.ImagenUrl);
 
             }
@@ -54,10 +55,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         }
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
-        {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+        {   
+            ///ACA ESTA EL ERROR QUE FRENA CUANDO SE QUIERE BUSCAR. ESTO ES LO QUE MUESTRA LA DESCRIPCION DE LOS DIFERENTES ARTICULOS
+            //Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             //loadImagen(seleccionado.imagen.ImagenUrl);
-            lblDescripcion.Text = seleccionado.Descripcion;
+            //lblDescripcion.Text = seleccionado.Descripcion;
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
