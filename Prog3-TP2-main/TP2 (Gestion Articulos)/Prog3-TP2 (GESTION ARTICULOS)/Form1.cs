@@ -47,7 +47,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
 
