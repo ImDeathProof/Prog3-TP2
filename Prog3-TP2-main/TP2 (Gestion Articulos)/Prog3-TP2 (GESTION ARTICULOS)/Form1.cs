@@ -17,6 +17,10 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
     public partial class FrmPrincipal : Form
     {
         private List<Articulo> listaArticulo;
+        private List<Imagen> listaImagen;
+        private Articulo seleccionado;
+        private int idSeleccionada = 0;
+        private int nroImagen=0;
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -53,15 +57,15 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
         }
         //CARGAR IMAGENES----------------------------------------------------------
-        void cargarImagenes(int id)
+        /*void cargarImagenes(int id)
         {
             ImagenNegocio image = new ImagenNegocio();
             List<string> seleccionadas = new List<string>();
-            List<Imagen> listaImages = new List<Imagen>();
+            listaImagen = new List<Imagen>();
             try
             {
-                listaImages = image.listar();
-                int cant = listaImages.Count;
+                listaImagen = image.listar();
+                int cant = listaImagen.Count;
 
                 for (int i = 0; i < cant; i++)
                 {
@@ -71,7 +75,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                     }
                 }
 
-                /* foreach (Imagen item in listaImages)
+                 foreach (Imagen item in listaImages)
                  {
                      if (item.IdArticulo == seleccionado.Id)
                      {
@@ -79,7 +83,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                      }
 
                  }
-                */
+                
                 //MessageBox.Show("Cant " + seleccionadas.Count());
                 loadImagen(seleccionadas);
             }
@@ -89,6 +93,47 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 pbxImagen.Load("https://kinsta.com/wp-content/uploads/2022/06/error-establishing-a-database-connection-in-chrome.png");
             }
 
+        }*/
+
+        void cargarImagenes(int nro_Imagen)
+        {
+            ImagenNegocio imgNegocio = new ImagenNegocio();
+            listaImagen = new List<Imagen>();
+
+            try
+            {
+                listaImagen = imgNegocio.listar();
+                if(dgvArticulos.CurrentRow != null)
+                {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    foreach (Imagen item in listaImagen)
+                    {
+                        if (item.IdArticulo == seleccionado.Id)
+                        {
+                            loadImagen(listaImagen[idSeleccionada].ImagenUrl);
+                            break;
+                        }
+                        idSeleccionada++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+        private void loadImagen(string imagen)
+        {
+            try
+            {
+                pbxImagen.Load(imagen);
+            }
+            catch (Exception)
+            {
+                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
+            }
         }
 
         private void loadImagen(List<string> lista)
@@ -105,36 +150,22 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
             }
         }
-        private void loadImagen(string imagen)
-        {
-            try
-            {
-                pbxImagen.Load(imagen);
-            }
-            catch (Exception)
-            {
-                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
-            }
-        }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvArticulos.CurrentRow != null)
             {
-                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                cargarImagenes(seleccionado.Id);
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                nroImagen = 0;
+                idSeleccionada = 0;
+                cargarImagenes(nroImagen);
                 lblDescripcion.Text = seleccionado.Descripcion;
 
             }
             //loadImagen(seleccionado.imagen.ImagenUrl);
         }
         //-------------------------------------------------------------------------
-        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmModificar modificar = new FrmModificar();
-            modificar.Show();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//BOTON DE ELIMINAR
         {
             articuloNegocio articulo = new articuloNegocio();
             Articulo seleccionado;
@@ -279,14 +310,32 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
         }
 
+        //Botones para el cambio de imagenes
         private void btnFlechaIzquierda_Click(object sender, EventArgs e)
         {
-
+            if(nroImagen > 0)
+            {
+                nroImagen--;
+            }
+            cambiarImagen(nroImagen);
+            
         }
 
         private void btnFlechaDerecha_Click(object sender, EventArgs e)
         {
-
+            if(nroImagen < listaImagen.Count-1)
+            {
+                nroImagen++;
+            }
+            cambiarImagen(nroImagen);
+            
+        }
+        void cambiarImagen(int nro_Imagen)
+        {
+            if ((nro_Imagen > 0) && (listaImagen[idSeleccionada + nro_Imagen].IdArticulo == seleccionado.Id) && (nro_Imagen + idSeleccionada <= listaImagen.Count - 1))
+            {
+                loadImagen(listaImagen[idSeleccionada + nro_Imagen].ImagenUrl);
+            }
         }
     }
 }
