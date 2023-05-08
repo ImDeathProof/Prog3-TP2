@@ -34,3 +34,12 @@ C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negoci
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.dll
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Negocio.pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.dll
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\bin\Debug\Dominio.pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.dll
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Negocio\obj\Debug\Negocio.pdb

@@ -106,6 +106,7 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 if(dgvArticulos.CurrentRow != null)
                 {
                     seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
                     foreach (Imagen item in listaImagen)
                     {
                         if (item.IdArticulo == seleccionado.Id)
@@ -167,6 +168,12 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         private void button2_Click(object sender, EventArgs e)//BOTON DE ELIMINAR
         {
+            if (dgvArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar el articulo que desea eliminar. ");
+                return;
+            }
+
             articuloNegocio articulo = new articuloNegocio();
             Articulo seleccionado;
             try
@@ -174,14 +181,13 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.Yes)
                 {
-                    if(dgvArticulos.CurrentRow != null)
-                    {
-                        seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                        articulo.eliminar(seleccionado.Id);
-                        cargarLista();
-
-                    }
+                   
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    articulo.eliminar(seleccionado.Id);
+                    cargarLista();
+                    
                 }
+             
             }
             catch (Exception ex)
             {
@@ -308,6 +314,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 modificarArticulo.ShowDialog();
                 cargarLista();
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo. ");
+
+            }
         }
 
         //Botones para el cambio de imagenes
@@ -336,6 +347,33 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             {
                 loadImagen(listaImagen[idSeleccionada + nro_Imagen].ImagenUrl);
             }
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo articuloSeleccionado = new Articulo();
+
+            try
+            {
+                if(dgvArticulos.CurrentRow != null)
+                {
+                    articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    frmDetalle detalle = new frmDetalle(articuloSeleccionado);
+                    detalle.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Debe seleccionar un articulo. ");
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }

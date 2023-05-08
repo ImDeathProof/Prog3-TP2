@@ -53,6 +53,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnFlechaDerecha = new System.Windows.Forms.Button();
             this.btnFlechaIzquierda = new System.Windows.Forms.Button();
+            this.btnDetalle = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
@@ -82,7 +83,7 @@
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
             this.tsAgregar.Text = "Agregar";
             this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
             // 
@@ -97,7 +98,7 @@
             // agregarEliminarToolStripMenuItem
             // 
             this.agregarEliminarToolStripMenuItem.Name = "agregarEliminarToolStripMenuItem";
-            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.agregarEliminarToolStripMenuItem.Text = "Agregar - Eliminar";
             this.agregarEliminarToolStripMenuItem.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem_Click);
             // 
@@ -112,7 +113,7 @@
             // agregarEliminarToolStripMenuItem1
             // 
             this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
-            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
             this.agregarEliminarToolStripMenuItem1.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem1_Click);
             // 
@@ -277,6 +278,16 @@
             this.btnFlechaIzquierda.UseVisualStyleBackColor = true;
             this.btnFlechaIzquierda.Click += new System.EventHandler(this.btnFlechaIzquierda_Click);
             // 
+            // btnDetalle
+            // 
+            this.btnDetalle.Location = new System.Drawing.Point(925, 567);
+            this.btnDetalle.Name = "btnDetalle";
+            this.btnDetalle.Size = new System.Drawing.Size(75, 23);
+            this.btnDetalle.TabIndex = 15;
+            this.btnDetalle.Text = "Ver detalle";
+            this.btnDetalle.UseVisualStyleBackColor = true;
+            this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +295,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 621);
+            this.Controls.Add(this.btnDetalle);
             this.Controls.Add(this.btnFlechaIzquierda);
             this.Controls.Add(this.btnFlechaDerecha);
             this.Controls.Add(this.btnModificar);
@@ -343,6 +355,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnFlechaDerecha;
         private System.Windows.Forms.Button btnFlechaIzquierda;
+        private System.Windows.Forms.Button btnDetalle;
     }
 }
 

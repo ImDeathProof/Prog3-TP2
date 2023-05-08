@@ -78,3 +78,24 @@ C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTIC
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
 C:\123\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe.config
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Dominio.dll
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Negocio.dll
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Dominio.pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\bin\Debug\Negocio.pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmAltaArticulo.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmPrincipal.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmCategorias.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmMarcas.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.FrmModificar.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.Properties.Resources.resources
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Presentacion.csproj.CopyComplete
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
+C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmDetalle.resources

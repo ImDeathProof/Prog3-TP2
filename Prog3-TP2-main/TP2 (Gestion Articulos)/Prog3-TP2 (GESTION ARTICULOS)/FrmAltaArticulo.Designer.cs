@@ -34,12 +34,10 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblImagen = new System.Windows.Forms.Label();
             this.txbNombre = new System.Windows.Forms.TextBox();
             this.txbCodigo = new System.Windows.Forms.TextBox();
             this.txbDescripcion = new System.Windows.Forms.TextBox();
             this.txbPrecio = new System.Windows.Forms.TextBox();
-            this.txbImagen = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.cbMarca = new System.Windows.Forms.ComboBox();
@@ -106,16 +104,6 @@
             this.lblCategoria.TabIndex = 5;
             this.lblCategoria.Text = "Categoria";
             // 
-            // lblImagen
-            // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.Location = new System.Drawing.Point(50, 244);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(69, 20);
-            this.lblImagen.TabIndex = 6;
-            this.lblImagen.Text = "Imagen";
-            // 
             // txbNombre
             // 
             this.txbNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -148,18 +136,10 @@
             this.txbPrecio.Size = new System.Drawing.Size(289, 20);
             this.txbPrecio.TabIndex = 10;
             // 
-            // txbImagen
-            // 
-            this.txbImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbImagen.Location = new System.Drawing.Point(173, 247);
-            this.txbImagen.Name = "txbImagen";
-            this.txbImagen.Size = new System.Drawing.Size(289, 20);
-            this.txbImagen.TabIndex = 13;
-            // 
             // btnGuardar
             // 
             this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardar.Location = new System.Drawing.Point(284, 331);
+            this.btnGuardar.Location = new System.Drawing.Point(91, 309);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 14;
@@ -170,7 +150,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(387, 331);
+            this.btnCancelar.Location = new System.Drawing.Point(293, 309);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 15;
@@ -205,12 +185,10 @@
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txbImagen);
             this.Controls.Add(this.txbPrecio);
             this.Controls.Add(this.txbDescripcion);
             this.Controls.Add(this.txbCodigo);
             this.Controls.Add(this.txbNombre);
-            this.Controls.Add(this.lblImagen);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblPrecio);
@@ -236,12 +214,10 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblImagen;
         private System.Windows.Forms.TextBox txbNombre;
         private System.Windows.Forms.TextBox txbCodigo;
         private System.Windows.Forms.TextBox txbDescripcion;
         private System.Windows.Forms.TextBox txbPrecio;
-        private System.Windows.Forms.TextBox txbImagen;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cbMarca;
