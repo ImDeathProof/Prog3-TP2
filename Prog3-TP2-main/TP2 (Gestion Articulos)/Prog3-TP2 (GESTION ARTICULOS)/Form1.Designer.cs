@@ -51,6 +51,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnFlechaDerecha = new System.Windows.Forms.Button();
+            this.btnFlechaIzquierda = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
@@ -80,7 +82,7 @@
             // tsAgregar
             // 
             this.tsAgregar.Name = "tsAgregar";
-            this.tsAgregar.Size = new System.Drawing.Size(116, 22);
+            this.tsAgregar.Size = new System.Drawing.Size(180, 22);
             this.tsAgregar.Text = "Agregar";
             this.tsAgregar.Click += new System.EventHandler(this.tsAgregar_Click);
             // 
@@ -95,7 +97,7 @@
             // agregarEliminarToolStripMenuItem
             // 
             this.agregarEliminarToolStripMenuItem.Name = "agregarEliminarToolStripMenuItem";
-            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.agregarEliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarEliminarToolStripMenuItem.Text = "Agregar - Eliminar";
             this.agregarEliminarToolStripMenuItem.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem_Click);
             // 
@@ -110,7 +112,7 @@
             // agregarEliminarToolStripMenuItem1
             // 
             this.agregarEliminarToolStripMenuItem1.Name = "agregarEliminarToolStripMenuItem1";
-            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.agregarEliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.agregarEliminarToolStripMenuItem1.Text = "Agregar - Eliminar";
             this.agregarEliminarToolStripMenuItem1.Click += new System.EventHandler(this.agregarEliminarToolStripMenuItem1_Click);
             // 
@@ -228,7 +230,7 @@
             // 
             this.pbxImagen.ErrorImage = null;
             this.pbxImagen.InitialImage = null;
-            this.pbxImagen.Location = new System.Drawing.Point(787, 68);
+            this.pbxImagen.Location = new System.Drawing.Point(807, 68);
             this.pbxImagen.Name = "pbxImagen";
             this.pbxImagen.Size = new System.Drawing.Size(300, 300);
             this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +239,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(1012, 567);
+            this.btnEliminar.Location = new System.Drawing.Point(1032, 567);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 5;
@@ -247,13 +249,33 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(787, 567);
+            this.btnModificar.Location = new System.Drawing.Point(807, 567);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnFlechaDerecha
+            // 
+            this.btnFlechaDerecha.Location = new System.Drawing.Point(1113, 68);
+            this.btnFlechaDerecha.Name = "btnFlechaDerecha";
+            this.btnFlechaDerecha.Size = new System.Drawing.Size(23, 300);
+            this.btnFlechaDerecha.TabIndex = 13;
+            this.btnFlechaDerecha.Text = "🢂";
+            this.btnFlechaDerecha.UseVisualStyleBackColor = true;
+            this.btnFlechaDerecha.Click += new System.EventHandler(this.btnFlechaDerecha_Click);
+            // 
+            // btnFlechaIzquierda
+            // 
+            this.btnFlechaIzquierda.Location = new System.Drawing.Point(774, 68);
+            this.btnFlechaIzquierda.Name = "btnFlechaIzquierda";
+            this.btnFlechaIzquierda.Size = new System.Drawing.Size(27, 300);
+            this.btnFlechaIzquierda.TabIndex = 14;
+            this.btnFlechaIzquierda.Text = "🢀";
+            this.btnFlechaIzquierda.UseVisualStyleBackColor = true;
+            this.btnFlechaIzquierda.Click += new System.EventHandler(this.btnFlechaIzquierda_Click);
             // 
             // FrmPrincipal
             // 
@@ -262,6 +284,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 621);
+            this.Controls.Add(this.btnFlechaIzquierda);
+            this.Controls.Add(this.btnFlechaDerecha);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
@@ -317,6 +341,8 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnFlechaDerecha;
+        private System.Windows.Forms.Button btnFlechaIzquierda;
     }
 }
 

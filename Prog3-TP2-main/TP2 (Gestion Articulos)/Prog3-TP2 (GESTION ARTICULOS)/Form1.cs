@@ -51,10 +51,8 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             {
                 throw ex;
             }
-
-
         }
-
+        //CARGAR IMAGENES----------------------------------------------------------
         void cargarImagenes(int id)
         {
             ImagenNegocio image = new ImagenNegocio();
@@ -107,8 +105,17 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
             }
         }
-     
-
+        private void loadImagen(string imagen)
+        {
+            try
+            {
+                pbxImagen.Load(imagen);
+            }
+            catch (Exception)
+            {
+                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
+            }
+        }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvArticulos.CurrentRow != null)
@@ -120,31 +127,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
             //loadImagen(seleccionado.imagen.ImagenUrl);
         }
-       
-
-       
-
-        
-
+        //-------------------------------------------------------------------------
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmModificar modificar = new FrmModificar();
             modificar.Show();
-        }
-       
-
-      
-
-        private void loadImagen(string imagen)
-        {
-            try
-            {
-                pbxImagen.Load(imagen);
-            }
-            catch (Exception)
-            {
-                pbxImagen.Load("https://static.thenounproject.com/png/2879926-200.png");
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -290,6 +277,16 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 modificarArticulo.ShowDialog();
                 cargarLista();
             }
+        }
+
+        private void btnFlechaIzquierda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFlechaDerecha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
