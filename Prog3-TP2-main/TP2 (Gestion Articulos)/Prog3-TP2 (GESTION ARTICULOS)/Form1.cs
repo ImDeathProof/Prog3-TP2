@@ -111,15 +111,14 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
-            ///ACA ESTA EL ERROR QUE FRENA CUANDO SE QUIERE BUSCAR. ESTO ES LO QUE MUESTRA LA DESCRIPCION DE LOS DIFERENTES ARTICULOS
             if (dgvArticulos.CurrentRow != null)
             {
                 Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 cargarImagenes(seleccionado.Id);
+                lblDescripcion.Text = seleccionado.Descripcion;
 
             }
             //loadImagen(seleccionado.imagen.ImagenUrl);
-            //lblDescripcion.Text = seleccionado.Descripcion;
         }
        
 
