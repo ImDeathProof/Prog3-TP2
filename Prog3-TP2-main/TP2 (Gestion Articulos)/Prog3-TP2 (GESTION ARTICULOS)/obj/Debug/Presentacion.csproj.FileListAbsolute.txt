@@ -99,3 +99,4 @@ C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTIC
 C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).exe
 C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3-TP2 (GESTION ARTICULOS).pdb
 C:\art\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmDetalle.resources
+S:\UTN\Segundo año\Programación 3\Trabajos Practicos\Prog3-TP2\Prog3-TP2-main\TP2 (Gestion Articulos)\Prog3-TP2 (GESTION ARTICULOS)\obj\Debug\Prog3_TP2__GESTION_ARTICULOS_.frmDetalle.resources

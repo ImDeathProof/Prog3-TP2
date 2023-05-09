@@ -57,73 +57,24 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
         }
         //CARGAR IMAGENES----------------------------------------------------------
-        /*void cargarImagenes(int id)
+        void cargarImagenes()
         {
-            ImagenNegocio image = new ImagenNegocio();
-            List<string> seleccionadas = new List<string>();
-            listaImagen = new List<Imagen>();
-            try
-            {
-                listaImagen = image.listar();
-                int cant = listaImagen.Count;
-
-                for (int i = 0; i < cant; i++)
-                {
-                    if (listaImages[i].IdArticulo == id)
-                    {
-                        seleccionadas.Add(listaImages[i].ImagenUrl);
-                    }
-                }
-
-                 foreach (Imagen item in listaImages)
-                 {
-                     if (item.IdArticulo == seleccionado.Id)
-                     {
-                         seleccionadas.Add(item);
-                     }
-
-                 }
-                
-                //MessageBox.Show("Cant " + seleccionadas.Count());
-                loadImagen(seleccionadas);
-            }
-            catch (Exception)
-            {
-
-                pbxImagen.Load("https://kinsta.com/wp-content/uploads/2022/06/error-establishing-a-database-connection-in-chrome.png");
-            }
-
-        }*/
-
-        void cargarImagenes(int nro_Imagen)
-        {
-            ImagenNegocio imgNegocio = new ImagenNegocio();
-            listaImagen = new List<Imagen>();
 
             try
             {
-                listaImagen = imgNegocio.listar();
                 if(dgvArticulos.CurrentRow != null)
                 {
                     seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
-                    foreach (Imagen item in listaImagen)
+                    if (seleccionado.imagenes.Count > 0)
                     {
-                        if (item.IdArticulo == seleccionado.Id)
-                        {
-                            loadImagen(listaImagen[idSeleccionada].ImagenUrl);
-                            break;
-                        }
-                        idSeleccionada++;
+                        loadImagen(seleccionado.imagenes[0].ImagenUrl);
                     }
                 }
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
-
         }
         private void loadImagen(string imagen)
         {
@@ -158,11 +109,10 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 nroImagen = 0;
                 idSeleccionada = 0;
-                cargarImagenes(nroImagen);
+                cargarImagenes();
                 lblDescripcion.Text = seleccionado.Descripcion;
-
             }
-            //loadImagen(seleccionado.imagen.ImagenUrl);
+            
         }
         //-------------------------------------------------------------------------
 
@@ -175,7 +125,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
 
             articuloNegocio articulo = new articuloNegocio();
-            Articulo seleccionado;
             try
             {
                 DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -324,17 +273,20 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         //Botones para el cambio de imagenes
         private void btnFlechaIzquierda_Click(object sender, EventArgs e)
         {
-            if(nroImagen > 0)
+            if (dgvArticulos.CurrentRow != null)
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (nroImagen > 0)
             {
                 nroImagen--;
             }
             cambiarImagen(nroImagen);
-            
         }
 
         private void btnFlechaDerecha_Click(object sender, EventArgs e)
         {
-            if(nroImagen < listaImagen.Count-1)
+            if (dgvArticulos.CurrentRow != null)
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (nroImagen < seleccionado.imagenes.Count - 1)
             {
                 nroImagen++;
             }
@@ -343,9 +295,11 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
         }
         void cambiarImagen(int nro_Imagen)
         {
-            if ((nro_Imagen > 0) && (listaImagen[idSeleccionada + nro_Imagen].IdArticulo == seleccionado.Id) && (nro_Imagen + idSeleccionada <= listaImagen.Count - 1))
+            if (dgvArticulos.CurrentRow != null)
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if ((nro_Imagen >= 0) && (nro_Imagen <= seleccionado.imagenes.Count - 1))
             {
-                loadImagen(listaImagen[idSeleccionada + nro_Imagen].ImagenUrl);
+                loadImagen(seleccionado.imagenes[nro_Imagen].ImagenUrl);
             }
         }
 
@@ -370,7 +324,6 @@ namespace Prog3_TP2__GESTION_ARTICULOS_
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
 

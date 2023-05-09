@@ -30,8 +30,8 @@ namespace Negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
-                    //aux.imagen = new Imagen();
-                    //aux.imagen.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.imagenes = new List<Imagen>();
+                    aux.imagenes = this.cargarImagenes(aux.Id);
                     aux.categoria = new Categoria();
                     if (datos.Lector["Categoria"] is DBNull)
                     {
@@ -56,7 +56,32 @@ namespace Negocio
                 throw ex;
             }
         }
+        public List<Imagen> cargarImagenes(int id) {
+            List<Imagen> listaImg = new List<Imagen>();
+            List<Imagen> listaImg2 = new List<Imagen>();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            try
+            {
+                listaImg = imagenNegocio.listar();
+            
+                foreach (Imagen item in listaImg)
+                {
+                    if (item.IdArticulo == id)
+                    {
+                        listaImg2.Add(item);
+                    }
+                }
+                
+                return listaImg2;
 
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        
 
 
         public void eliminar(int id)
